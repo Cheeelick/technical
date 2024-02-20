@@ -1,0 +1,8 @@
+---
+- name: Deploy Grafana
+  hosts: tz_server
+  become: true
+  roles:
+    - prometheus
+    - prometheus_node_exporter
+    - grafana

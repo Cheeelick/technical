@@ -1,0 +1,7 @@
+---
+- hosts: tz_server
+  become: true
+  become_user: root
+  become_method: sudo
+  roles:
+    - grafana
